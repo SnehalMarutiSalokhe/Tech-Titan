@@ -1,0 +1,114 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #333; /* Background color */
+  color: white; /* Text color */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  position: relative; /* Added for animations */
+  transition: color 0.3s; /* Color change animation */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Hover color */
+}
+.nav-search{
+  margin-left: 60%;
+
+}
+.search-input {
+  background-color: transparent; /* Transparent background */
+  border: none;
+  color: white;
+  padding-left: 3rem;
+  border-bottom: 1px solid white; /* Bottom border for input */
+  padding-left: 5rem;
+ 
+}
+
+
+.profile {
+  display: flex;
+  align-items: center; 
+  cursor: pointer;
+  margin-right: 0;
+}
+
+.profile-image {
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  object-fit: cover;
+  margin-right: 0.5rem;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  color: gray;
+  background-color: white; /* Dropdown background color */
+  border: 1px solid black;
+  border-radius: 4px;
+  display: none;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.dropdown a{
+  color: rgb(95, 95, 95);
+  list-style: none;
+}
+.profile:hover .dropdown {
+  display: flex; 
+  text-transform: none;
+}
+
+
+.navbar-toggler {
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-right: auto;
+}
+
+.navbar-left .nav-link {
+  padding: 0 1rem; 
+}
+
+/* Media Query for Large Screens */
+@media (min-width: 768px) {
+  .nav {
+    display: block;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+}
