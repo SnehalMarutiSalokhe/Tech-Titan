@@ -7,6 +7,7 @@ const NavbarComponent = () => {
   const [navbarIsOpen, setNavbarIsOpen] = useState(false);
   const [dropdownIsOpen, setDropdownIsOpen] = useState(false);
 
+  // eslint-disable-next-line no-unused-vars
   const handleToggleNavbar = () => {
     setNavbarIsOpen(!navbarIsOpen);
   };
